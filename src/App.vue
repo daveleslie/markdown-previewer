@@ -22,6 +22,12 @@ export default {
       "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
     );
     document.head.appendChild(testLibrary);
+    let markedLibrary = document.createElement("script");
+    testLibrary.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.1/marked.js"
+    );
+    document.head.appendChild(markedLibrary);
   },
 };
 </script>
