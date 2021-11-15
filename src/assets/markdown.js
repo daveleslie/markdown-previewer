@@ -1,6 +1,4 @@
-
-   
-  const placeholder = `# Welcome to my React Markdown Previewer!
+const placeholder = `# Welcome to my VueJS Markdown Previewer!
 
   ## This is a sub-heading...
   ### And here's some other cool stuff:
@@ -43,4 +41,6 @@
   1. And last but not least, let's not forget embedded images:
   
   ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-  `
+  `;
+
+export default { placeholder };

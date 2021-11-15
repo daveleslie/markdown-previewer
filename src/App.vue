@@ -9,6 +9,8 @@
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheBody from './components/layout/TheBody.vue'
 
+// import marked from 'marked';
+
 export default {
   name: "App",
   components: {
@@ -22,12 +24,6 @@ export default {
       "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
     );
     document.head.appendChild(testLibrary);
-    let markedLibrary = document.createElement("script");
-    testLibrary.setAttribute(
-      "src",
-      "https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.1/marked.js"
-    );
-    document.head.appendChild(markedLibrary);
   },
 };
 </script>
@@ -47,5 +43,36 @@ html {
 
 body {
   margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 2px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* tr {
+  border-bottom: solid 1px black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+code {
+  background: white;
+  display: inline-block;
+}
+
+pre {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
 }
 </style>
